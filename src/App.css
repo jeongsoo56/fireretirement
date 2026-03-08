@@ -1,0 +1,348 @@
+.page {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 1.2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  padding: 1.2rem;
+  border-radius: 20px;
+  color: #f7f6f0;
+  background:
+    radial-gradient(circle at top right, rgba(255, 197, 118, 0.18), transparent 28%),
+    linear-gradient(135deg, #1f2e27, #385f4e 60%, #688c68);
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  padding: 0.24rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  font-size: 0.8rem;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  line-height: 1.2;
+}
+
+.hero p {
+  margin: 0.6rem 0 0;
+  color: #e9efe8;
+}
+
+.hero-side {
+  padding: 1rem;
+  border-radius: 16px;
+  background: rgba(16, 27, 22, 0.3);
+  display: grid;
+  align-content: start;
+  gap: 0.6rem;
+}
+
+.hero-side button,
+.ghost-button,
+.mode-button {
+  border: 1px solid #bcc8c1;
+  border-radius: 999px;
+  padding: 0.62rem 0.95rem;
+  background: #f5f3eb;
+  color: #213a2d;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.panel {
+  padding: 1rem;
+  border: 1px solid #d9e0da;
+  border-radius: 18px;
+  background: #fffdf7;
+}
+
+.panel h2 {
+  margin: 0 0 0.8rem;
+  color: #1f3429;
+}
+
+.note {
+  margin: 0.55rem 0 0;
+  color: #567060;
+  font-size: 0.88rem;
+}
+
+.grid {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.grid.compact {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+label {
+  display: grid;
+  gap: 0.32rem;
+  color: #264033;
+  font-size: 0.9rem;
+}
+
+input,
+select {
+  border: 1px solid #c9d4cc;
+  border-radius: 10px;
+  padding: 0.62rem 0.68rem;
+  background: #fcfbf6;
+  font-size: 0.95rem;
+}
+
+.mode-panel {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.mode-button {
+  border-radius: 16px;
+  text-align: left;
+  padding: 0.95rem 1rem;
+}
+
+.mode-button.active {
+  border-color: #2f6e54;
+  background: #e8f3ed;
+  color: #174430;
+}
+
+.stats {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.stats article {
+  padding: 0.8rem;
+  border: 1px solid #d9e3dc;
+  border-radius: 14px;
+  background: #faf8f1;
+}
+
+.stats span {
+  display: block;
+  font-size: 0.82rem;
+  color: #5d7264;
+}
+
+.stats strong {
+  display: block;
+  margin-top: 0.2rem;
+  color: #173c2a;
+  font-size: 1.1rem;
+}
+
+.stats small {
+  display: block;
+  margin-top: 0.16rem;
+  color: #617569;
+}
+
+.stack {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.purchase-row {
+  display: grid;
+  gap: 0.7rem;
+  padding: 0.85rem;
+  border: 1px solid #dce3dd;
+  border-radius: 14px;
+  background: #faf9f3;
+}
+
+.future-row {
+  grid-template-columns: 1.4fr 1fr 1fr auto;
+}
+
+.full-row {
+  grid-column: 1 / -1;
+}
+
+.range-value {
+  color: #4d6758;
+  font-size: 0.82rem;
+}
+
+.ghost-button {
+  background: #f6f7f1;
+}
+
+.ghost-button.danger {
+  color: #8a2d2d;
+}
+
+.extra-top {
+  margin-top: 0.8rem;
+}
+
+.check-row {
+  margin-top: 0.8rem;
+}
+
+.check-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.market-pill-row {
+  margin-top: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.market-pill-row span {
+  padding: 0.42rem 0.7rem;
+  border-radius: 999px;
+  background: #eff4ee;
+  color: #325242;
+  font-size: 0.82rem;
+}
+
+.table-actions {
+  margin-top: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 960px;
+  border-collapse: collapse;
+}
+
+.yearly-table tbody tr:nth-child(odd) {
+  background: #fbf9f2;
+}
+
+.summary-row {
+  background: #fcfbf6;
+}
+
+.detail-row {
+  background: #f3f6f2;
+}
+
+.detail-label {
+  padding-left: 1.1rem;
+  color: #466456;
+}
+
+.year-button {
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.year-chip {
+  display: inline-block;
+  min-width: 74px;
+  padding: 0.28rem 0.55rem;
+  border-radius: 999px;
+  background: #e8efe8;
+  color: #244438;
+  text-align: center;
+  font-weight: 600;
+}
+
+th,
+td {
+  padding: 0.56rem;
+  border-bottom: 1px solid #e4e8e2;
+  text-align: right;
+  white-space: nowrap;
+  font-size: 0.84rem;
+}
+
+th {
+  background: #eff4ee;
+  color: #274236;
+  position: sticky;
+  top: 0;
+}
+
+th:first-child,
+td:first-child {
+  text-align: left;
+}
+
+.formula-block {
+  margin-top: 0.9rem;
+}
+
+.formula-card {
+  padding: 0.9rem;
+  border: 1px solid #d8e2db;
+  border-radius: 12px;
+  background: #f8faf7;
+}
+
+.formula-card h3 {
+  margin: 0;
+  color: #1f3c2f;
+  font-size: 0.96rem;
+}
+
+.formula-card p {
+  margin: 0.45rem 0 0;
+  color: #4f695b;
+  font-size: 0.86rem;
+}
+
+.formula-card pre {
+  margin: 0.7rem 0 0;
+  padding: 0.72rem;
+  border-radius: 10px;
+  border: 1px solid #e1e7e1;
+  background: #ffffff;
+  color: #21382d;
+  font-size: 0.78rem;
+  line-height: 1.55;
+  white-space: pre-wrap;
+}
+
+@media (min-width: 860px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .purchase-row {
+    grid-template-columns: 1.5fr 1fr 1fr auto;
+    align-items: end;
+  }
+}
+
+@media (max-width: 859px) {
+  .hero,
+  .mode-panel,
+  .grid.compact {
+    grid-template-columns: 1fr;
+  }
+}

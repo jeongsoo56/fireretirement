@@ -1,0 +1,9 @@
+node_modules/
+dist/
+__pycache__/
+*.log
+api-*.json
+cloudflare-tunnel-*.log
+public-tunnel-*.log
+localhostrun-*.log
+pinggy-*.log
